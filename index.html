@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LB Dev Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="start">
+        <h2>Welcome to The Quiz!</h2>
+        <button id="startbtn">Start Quiz</button>
+      </div>
+
+      <div id="quiz">
+        <div id="timer">Time left:</div>
+        <div id="questions"><p>Questions</p></div>
+        <button id="buttonA" onclick="checkAnswer('a')">A</button>
+        <button id="buttonB" onclick="checkAnswer('b')">B</button>
+        <button id="buttonC" onclick="checkAnswer('c')">C</button>
+        <button id="buttonD" onclick="checkAnswer('d')">D</button>
+        <div id="result"></div>
+      </div>
+      <div id="gameover">
+        <div id="finalScore"></div>
+        <input
+          type="text"
+          size="40"
+          placeholder="Enter you initials for high score"
+          name="intials"
+          id="initials"
+        />
+        <button id="submitScore">Submit</button>
+      </div>
+      <div id="highscoreContainer">
+        <div id="high-scorePage">
+          <div id="highscore-header">
+            <h3>User Initials</h3>
+            <h3>Score</h3>
+          </div>
+          <div id="highscore-initials"></div>
+          <div id="highscore-score"></div>
+        </div>
+        <div id="endGameBtns">
+          <button id="playAgain" onclick="replayQuiz()">Play Again</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
